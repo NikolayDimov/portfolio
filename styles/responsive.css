@@ -150,19 +150,19 @@
 
 /* ABOUT */
 @media screen and (max-width: 1200px) {
-    .about {
+    .container_about {
         max-width: 800px;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .about {
+    .container_about {
         max-width: 600px;
-        margin: 3em auto;
+        margin: 0 auto;
         height: auto;
     }
 
-    .about_container {
+    .about_container_content {
         height: 100%;
     }
 
@@ -172,25 +172,25 @@
 }
 
 @media screen and (max-width: 768px) {
-    .about {
+    .container_about {
         max-width: 500px;
-        margin: 3em auto;
+        margin: 0 auto;
         height: auto;
     }
 
-    .about_container {
+    .about_container_content {
         height: 100%;
     }
 
-    .about_container {
+    .about_container_content {
         padding-top: 0;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .about {
+    .container_about {
         max-width: 450px;
-        margin: 3em auto;
+        margin: 0 auto;
         padding-left: 2em;
         padding-right: 2em;
         font-size: 1em;
