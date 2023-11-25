@@ -1,0 +1,60 @@
+.contact {
+    background-color: #F1F1F1;
+}
+
+.container_contact {
+    width: 80%;
+    padding: 2em;
+    margin: 0 auto;
+
+}
+
+.row_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    position: relative;
+}
+
+.heading-secondary {
+    margin-bottom: 2em;
+}
+
+.form_contact {
+    width: 70%;
+    max-width: 960px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d9dbdd;
+    border-radius: 6px;
+    line-height: 2;
+}
+
+
+
+.btn__icon-right {
+    height: 1.2em;
+    width: 1.2em;
+    margin-left: 0.4em;
+    fill: #1A5C8E;
+}
+
+.btn-right {
+    display: flex;
+    justify-content: end;
+    margin-top: 2em;
+}

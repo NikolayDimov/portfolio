@@ -1,0 +1,356 @@
+*,
+*::before,
+*::after,
+main {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Lato, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-color: black;
+    background-image: url("../img/pxfuel-resize.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.header_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+
+header .nav-items li {
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    list-style: none;
+    /* Blue line under NAV */
+    position: relative;
+}
+
+
+header .nav-items a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 21px;
+}
+
+
+
+/* Blue line under NAV */
+header .nav-items li::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #0871C2;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: transform 0.3s ease;
+}
+
+.header .nav-items li:hover::after {
+    transform: scaleX(1);
+}
+
+.header .nav-items .nav-item a:hover {
+    color: #ddd;
+}
+
+
+
+
+
+
+/* Wrapper */
+.wrapper-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+
+/* Position Pic and Name on the center of the screen */
+.header_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_content {
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header_content .media {
+    width: 180px;
+    height: auto;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+
+.heading-primary--main {
+    font-size: 36px;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 36px;
+}
+
+.heading-primary--sub {
+    font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 36px;
+    margin-bottom: 1em;
+}
+
+
+/* Buttons */
+.btn {
+    font-size: 1em;
+    color: #eeeeee;
+    padding: 0.6em 1.8em;
+    font-weight: 400;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    white-space: nowrap;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.btn,
+.btn:hover,
+.btn:focus {
+    text-decoration: none;
+}
+
+
+.btn--full {
+    border: 1px solid transparent;
+    background-color: #1A5C8E;
+    color: #eeeeee;
+}
+
+.btn--full:hover,
+.btn--full:focus,
+.btn--full:active {
+    color: #eeeeee;
+    background-color: #0871c2;
+}
+
+.btn--ghost {
+    border: 1px solid #1A5C8E;
+    color: #0978CE;
+}
+
+.btn--ghost:hover,
+.btn--ghost:focus,
+.btn--ghost:active {
+    color: #eeeeee;
+    background-color: #1A5C8E;
+}
+
+.btn-about {
+    margin-right: 10px;
+}
+
+
+
+/* Social links */
+.social-icons__link {
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.5s ease;
+}
+
+.header__social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-left: 10px;
+}
+
+
+.social-icons__link:hover {
+    transform: scale(1.6);
+}
+
+.social-icons__link i {
+    font-size: 26px;
+}
+
+.social-icons__link .fa-github:hover {
+    color: #bebebe;
+}
+
+.social-icons__link .fa-linkedin:hover {
+    color: #086BCA;
+}
+
+.social-icons__link .fa-discord:hover {
+    color: #FFCE39;
+}
+
+.social-icons__link .fa-facebook:hover {
+    color: transparent;
+    background-image: url('../img/social_icons/Facebook_Logo_2023.png');
+    background-size: cover;
+}
+
+
+
+.social-icons__link .fa-instagram:hover {
+    color: transparent;
+    background-image: url('../img/social_icons/800px-Instagram.png');
+    background-size: cover;
+}
+
+.social-icons__link .fa-twitter:hover {
+    color: #08A5F3;
+}
+
+.social-icons__link .fa-viber:hover {
+    color: #914FCE;
+}
+
+
+.navbar-portfolio-img {
+    width: 3em;
+}
+
+
+
+
+
+
+
+
+/* Sidebar menu */
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    color: #FFF;
+    height: 50px;
+    margin: 1.5em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu>li {
+    overflow: hidden;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden-span {
+    visibility: hidden;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(45deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-45deg);
+}

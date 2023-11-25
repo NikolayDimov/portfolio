@@ -1,0 +1,222 @@
+.work {
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.heading-secondary {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.875em;
+    color: #0978CE;
+    letter-spacing: 1px;
+}
+
+
+.heading-secondary::after {
+    content: '';
+    display: block;
+    background-color: currentColor;
+    width: 5em;
+    height: 2px;
+    margin: 1em auto 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-tabs {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.nav-item {
+    list-style: none;
+    border: 1px solid transparent;
+}
+
+.nav-item a {
+    color: #0978CE;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 8px 16px;
+}
+
+
+/* Container with Projects */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    gap: 2em;
+}
+
+.tab-content {
+    margin: auto;
+}
+
+.project-box {
+    flex: 1 1 30%;
+    transition: transform 0.2s ease-in-out;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.project-box:hover {
+    /* Move the card upward on hover */
+    transform: translateY(-5px);
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #dadada;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 2px -3px #615757;
+    transition: box-shadow 0.2s ease-in-out, border 0.2s ease-in-out, transform .2s ease-in-out;
+    max-width: 23.75em;
+    height: 100%;
+}
+
+.project:hover {
+    box-shadow: inset 0px 0px 16px -4px #615757;
+}
+
+.img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.project__img-box {
+    cursor: pointer;
+    overflow: hidden;
+    height: 100%;
+}
+
+.project__content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    flex-grow: 1;
+    padding: 1em;
+}
+
+.heading-work {
+    display: block;
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #1A5C8E;
+    font-size: 1.375em;
+    font-weight: 400;
+}
+
+.project__details {
+    font-size: 1.0625em;
+    line-height: 1.4;
+}
+
+.project__cta-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 0.5em auto; */
+}
+
+.icon-earth {
+    fill: #fff;
+}
+
+
+
+
+.show-all-btn {
+    text-align: center;
+    cursor: pointer;
+    padding-top: 2em;
+}
+
+
+
+
+/* Change github project to certificates */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+
+
+
+
+
+/* TABLE */
+table,
+tr,
+th,
+td {
+    border: 1px solid #E5E5E5;
+}
+
+.table {
+    border-collapse: collapse;
+    margin: 3em auto;
+    border: 1px solid #dee2e6;
+    color: #212529;
+    width: 70%;
+}
+
+.table thead th {
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding: 0.5em;
+
+}
+
+.table tr:nth-of-type(2n) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table thead {
+    background-color: #DFDFDF;
+}
+
+.table tbody tr:hover {
+    color: #212529;
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table tbody td a {
+    text-decoration: none;
+    color: #0978CE;
+}
+
+
+.hidden-h2-onSection {
+    display: none;
+}

@@ -1,0 +1,169 @@
+.footer {
+    display: block;
+    background-color: black;
+    background-image: url("../img/pxfuel-resize.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__social-heading {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.footer__nav {
+    padding: 0.625em 0;
+    border-top: 1px solid #333333;
+    justify-content: space-evenly;
+}
+
+.footer__nav a.nav-link {
+    padding: 0.625em 1em;
+    border-bottom: 1px solid transparent;
+    color: #eeeeee;
+    text-transform: uppercase;
+}
+
+.footer__nav a.nav-link:hover,
+.footer__nav a.nav-link:focus,
+.footer__nav a.nav-link:active {
+    color: #eeeeee;
+    text-decoration: underline;
+}
+
+.footer__nav a.nav-link.active {
+    color: #eeeeee;
+}
+
+.footer__credits {
+    border-top: 1px solid #333333;
+    margin: 0;
+    padding: 0.875em 0;
+    color: #eeeeee;
+}
+
+.footer__credits a {
+    color: #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+
+
+
+.footer-nav-link {
+    text-decoration: none;
+}
+
+.footer_links {
+    text-decoration: none;
+}
+
+.footer-nav-item a {
+    text-decoration: none;
+}
+
+.footer__nav li {
+    list-style: none;
+
+}
+
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.social-icons__link_footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.5s ease;
+}
+
+.social-icons__link_footer:hover {
+    transform: scale(1.6);
+}
+
+.social-icons__icon {
+    width: 1.5em;
+    height: 1.5em;
+    fill: #f7f7f7;
+}
+
+.social-icons--lg {
+    margin-bottom: 2em;
+}
+
+.social-icons--lg .social-icons__icon {
+    width: 1.75em;
+    height: 1.75em;
+}
+
+.social-icons--lg .social-icons__link_footer {
+    padding: 0.3125em 0.4375em;
+}
+
+.social-icons__link_footer i {
+    font-size: 30px;
+}
+
+
+.social-icons__link_footer .fa-github:hover {
+    color: #bebebe;
+}
+
+.social-icons__link_footer .fa-linkedin:hover {
+    color: #086BCA;
+}
+
+.social-icons__link_footer .fa-discord:hover {
+    color: #FFCE39;
+}
+
+.social-icons__link_footer .fa-facebook:hover {
+    color: transparent;
+    background-image: url('../img/social_icons/Facebook_Logo_2023.png');
+    background-size: cover;
+}
+
+.social-icons__link_footer .fa-instagram:hover {
+    color: #415E9B;
+}
+
+.social-icons__link_footer .fa-instagram:hover {
+    color: transparent;
+    background-image: url('../img/social_icons/800px-Instagram.png');
+    background-size: cover;
+}
+
+.social-icons__link_footer .fa-twitter:hover {
+    color: #08A5F3;
+}
+
+.social-icons__link_footer .fa-viber:hover {
+    color: #914FCE;
+}
+
+
+
+.footer-nav-ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}

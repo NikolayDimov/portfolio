@@ -1,0 +1,114 @@
+.about {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.about_container {
+    padding-top: 5em;
+
+}
+
+.heading-secondary {
+    display: block;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(9, 132, 227);
+    margin-bottom: 1em;
+}
+
+.heading-secondary::after {
+    content: "";
+    display: block;
+    background-color: currentcolor;
+    width: 3em;
+    height: 2px;
+    margin: 1em auto 0px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about__content {
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #555555;
+}
+
+
+.about .about__content p {
+    margin-bottom: 1em;
+    text-indent: 4em;
+    text-align: justify;
+}
+
+
+.heading-tertiary {
+    flex: 1 1 100%;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #0984e3;
+}
+
+/* Icons */
+.about__skills-icons {
+    line-height: 1.7;
+    flex: 1 1 100%;
+}
+
+.about__skills-icon {
+    height: 1.8em;
+    width: 1.8em;
+    margin-right: 0.4375em;
+}
+
+
+.btn__icon-left {
+    height: 1.2em;
+    width: 1.2em;
+    margin-right: 0.4em;
+    fill: #1A5C8E;
+}
+
+
+/* Buttons */
+.about__cta-box {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+
+.btn--ghost {
+    border: 1px solid #1A5C8E;
+    color: #1A5C8E;
+    margin-right: 0.5em;
+}
+
+.btn--ghost:hover,
+.btn--ghost:focus,
+.btn--ghost:active {
+    color: #eeeeee;
+    background-color: #5294c7;
+}
+
+
+.btn--full {
+    border: 1px solid transparent;
+    background-color: #1A5C8E;
+    color: #eeeeee;
+}
+
+.btn--full:hover,
+.btn--full:focus,
+.btn--full:active {
+    color: #eeeeee;
+    background-color: #5294c7;
+}
