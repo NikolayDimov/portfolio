@@ -16,14 +16,24 @@ body {
     font-family: Lato, sans-serif;
 }
 
-.header_container {
+/* .header_container {
     width: 1200px;
+} */
+
+.container-width {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    border: 3px solid red;
 }
 
 .header {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     height: 100vh;
     color: #fff;
     background-color: black;
