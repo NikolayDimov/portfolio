@@ -1,6 +1,6 @@
 .about {
     height: 100vh;
-    background-color: #616161;
+    background-color: #b8b7b7;
 }
 
 .container_about {
@@ -20,7 +20,7 @@
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    color: rgb(9, 132, 227);
+    color: #1A5C8E;
     margin-bottom: 1em;
 }
 
@@ -42,7 +42,7 @@
     font-size: 1.25em;
     font-weight: 400;
     line-height: 1.2;
-    color: #F1F1F1;
+    color: #000000;
 }
 
 
@@ -57,7 +57,7 @@
     flex: 1 1 100%;
     font-size: 1.4em;
     font-weight: bold;
-    color: #0984e3;
+    color: #1A5C8E;
 }
 
 /* Icons */
@@ -83,13 +83,13 @@
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 100px;
-    color: #fff;
+    color: #1A5C8E;
     text-align: center;
     padding: 5px 0;
 
     /* Position the tooltip text */
     position: absolute;
-    bottom: -100%; /* Position it above the icon */
+    bottom: -100%;
     left: 25%;
     transform: translateX(-50%);
     z-index: 1;
@@ -103,8 +103,6 @@
     opacity: 1;
 }
 
-
-
 .btn__icon-left {
     height: 1.2em;
     width: 1.2em;
@@ -112,15 +110,12 @@
     fill: #1A5C8E;
 }
 
-
 /* Buttons */
 .about__cta-box {
     text-align: center;
     margin-top: 3em;
     padding-bottom: 2em;
-
 }
-
 
 .btn--ghost {
     border: 1px solid #1A5C8E;
@@ -150,6 +145,6 @@
 }
 
 .resume_btn {
-    color: #eeeeee;
-    border: 1px solid #eeeeee;
+    color: #1A5C8E;
+    border: 1px solid #1A5C8E;
 }
