@@ -58,9 +58,6 @@
 }
 
 
-
-
-
 .footer-nav-link {
     text-decoration: none;
 }
@@ -97,7 +94,7 @@
 }
 
 .social-icons__link_footer:hover {
-    transform: scale(1.6);
+    transform: scale(1.4);
 }
 
 .social-icons__icon {
@@ -150,6 +147,7 @@
     color: transparent;
     background-image: url('../img/social_icons/800px-Instagram.png');
     background-size: cover;
+    background-position: center;
 }
 
 .social-icons__link_footer .fa-twitter:hover {
@@ -159,7 +157,6 @@
 .social-icons__link_footer .fa-viber:hover {
     color: #914FCE;
 }
-
 
 
 .footer-nav-ul {

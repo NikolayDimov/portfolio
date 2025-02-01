@@ -45,7 +45,6 @@ body {
     overflow: auto;
 }
 
-
 header .nav-items li {
     padding-top: 2em;
     padding-bottom: 1.5em;
@@ -53,7 +52,6 @@ header .nav-items li {
     /* Blue line under NAV */
     position: relative;
 }
-
 
 header .nav-items a {
     text-decoration: none;
@@ -65,7 +63,6 @@ header .nav-items a {
     text-align: left;
     line-height: 21px;
 }
-
 
 
 /* Blue line under NAV */
@@ -92,10 +89,6 @@ header .nav-items li::after {
 }
 
 
-
-
-
-
 /* Wrapper */
 .wrapper-content {
     display: flex;
@@ -103,7 +96,6 @@ header .nav-items li::after {
     align-items: center;
     height: 80vh;
 }
-
 
 /* Position Pic and Name on the center of the screen */
 .header_content {
@@ -132,7 +124,6 @@ header .nav-items li::after {
 img {
     width: 100%;
 }
-
 
 .heading-primary--main {
     font-size: 36px;
@@ -171,13 +162,11 @@ img {
     cursor: pointer;
 }
 
-
 .btn,
 .btn:hover,
 .btn:focus {
     text-decoration: none;
 }
-
 
 .btn--full {
     border: 1px solid transparent;
@@ -209,7 +198,6 @@ img {
 }
 
 
-
 /* Social links */
 .social-icons__link {
     color: #fff;
@@ -225,9 +213,8 @@ img {
     margin-left: 10px;
 }
 
-
 .social-icons__link:hover {
-    transform: scale(1.6);
+    transform: scale(1.4);
 }
 
 .social-icons__link i {
@@ -252,12 +239,11 @@ img {
     background-size: cover;
 }
 
-
-
 .social-icons__link .fa-instagram:hover {
     color: transparent;
     background-image: url('../img/social_icons/800px-Instagram.png');
     background-size: cover;
+    background-position: center;
 }
 
 .social-icons__link .fa-twitter:hover {
@@ -275,14 +261,7 @@ img {
 }
 
 
-
-
-
-
-
-
 /* Sidebar menu */
-
 .top-nav {
     display: flex;
     flex-direction: row;
@@ -324,8 +303,6 @@ img {
 #menu-toggle {
     display: none;
 }
-
-
 
 
 .menu-button,
