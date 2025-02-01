@@ -112,7 +112,7 @@ header .nav-items li::after {
 }
 
 .header_content .media {
-    width: 180px;
+    width: 200px;
     height: auto;
     overflow: hidden;
     aspect-ratio: 1/1;
@@ -127,17 +127,17 @@ img {
 
 .heading-primary--main {
     font-size: 36px;
-    letter-spacing: 1.5px;
-    word-spacing: 2px;
+    letter-spacing: 1.2px;
+    word-spacing: 3px;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 36px;
 }
 
 .heading-primary--sub {
     font-size: 18px;
     letter-spacing: 2px;
-    word-spacing: 2px;
+    word-spacing: 3px;
     text-transform: uppercase;
     font-weight: 300;
     line-height: 36px;
