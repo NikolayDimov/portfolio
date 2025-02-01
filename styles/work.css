@@ -33,7 +33,6 @@
 .nav {
     display: flex;
     justify-content: center;
-
 }
 
 .nav-tabs {
@@ -80,7 +79,7 @@
 
 .project-box:hover {
     /* Move the card upward on hover */
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .project {
