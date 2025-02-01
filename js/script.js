@@ -8,7 +8,7 @@ function count(els) {
                     Counter: $(this).text(),
                 },
                 {
-                    duration: 3000,
+                    duration: 4000,
                     easing: "swing",
                     step: function (now) {
                         $(this).text(Math.ceil(now));
