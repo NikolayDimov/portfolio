@@ -72,6 +72,53 @@ function showSection(sectionId) {
     selectedSection.classList.add("visible");
 }
 
+// Pagination for projects
+document.addEventListener("DOMContentLoaded", function () {
+    const projectsPerPage = 6;
+    let currentPage = 1;
+
+    const projectsContainer = document.querySelector("#projects .row");
+    const allProjects = Array.from(projectsContainer.children);
+    const totalPages = Math.ceil(allProjects.length / projectsPerPage);
+
+    const prevButton = document.querySelector(".prev-btn");
+    const nextButton = document.querySelector(".next-btn");
+
+    function showProjects(page) {
+        projectsContainer.innerHTML = "";
+
+        const start = (page - 1) * projectsPerPage;
+        const end = start + projectsPerPage;
+        const projectsToShow = allProjects.slice(start, end);
+
+        projectsToShow.forEach(project => projectsContainer.appendChild(project));
+        updatePaginationButtons();
+        document.querySelector("#work").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function updatePaginationButtons() {
+        prevButton.disabled = currentPage === 1;
+        nextButton.disabled = currentPage === totalPages || totalPages === 0;
+    }
+
+    prevButton.addEventListener("click", function () {
+        if (currentPage > 1) {
+            currentPage--;
+            showProjects(currentPage);
+        }
+    });
+
+    nextButton.addEventListener("click", function () {
+        if (currentPage < totalPages) {
+            currentPage++;
+            showProjects(currentPage);
+        }
+    });
+
+    showProjects(currentPage);
+});
+
+
 // Send emails
 const contactForm = document.querySelector("form");
 const username = document.getElementById("username");

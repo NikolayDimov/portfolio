@@ -144,17 +144,22 @@
     fill: #fff;
 }
 
-
-
-
-.show-all-btn {
-    text-align: center;
-    cursor: pointer;
-    padding-top: 2em;
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
 }
 
+.show-all-btn {
+    text-align: left;
+    cursor: pointer;
+}
 
-
+.nav-buttons {
+    display: flex;
+    gap: 0.5em;
+}
 
 /* Change github project to certificates */
 .hidden {
