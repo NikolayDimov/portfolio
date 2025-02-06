@@ -89,7 +89,7 @@
 
     /* Position the tooltip text */
     position: absolute;
-    bottom: -100%;
+    bottom: -80%;
     left: 25%;
     transform: translateX(-50%);
     z-index: 1;
@@ -147,4 +147,22 @@
 .resume_btn {
     color: #1A5C8E;
     border: 1px solid #1A5C8E;
+}
+
+
+.about_technology_first_line,
+.about_technology_second_line {
+    display: flex;
+    justify-content: space-between;
+    gap: 6em;
+    margin-bottom: 25px;
+}
+
+.about_technology_container {
+    width: 100%;
+}
+
+.category-title {
+    font-weight: bold;
+    margin-bottom: 10px
 }
