@@ -113,8 +113,7 @@
 /* Buttons */
 .about__cta-box {
     text-align: center;
-    margin-top: 3em;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
 }
 
 .btn--ghost {
@@ -163,6 +162,6 @@
 }
 
 .category-title {
-    font-weight: bold;
+    font-size: 1.2em;
     margin-bottom: 10px
 }
