@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const prevButton = document.querySelector(".prev-btn");
     const nextButton = document.querySelector(".next-btn");
 
-    function showProjects(page) {
+    function showProjects(page, shouldScroll = false) {
         projectsContainer.innerHTML = "";
 
         const start = (page - 1) * projectsPerPage;
@@ -93,7 +93,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         projectsToShow.forEach(project => projectsContainer.appendChild(project));
         updatePaginationButtons();
-        document.querySelector("#work").scrollIntoView({ behavior: "smooth" });
+        if (shouldScroll) {
+            document.querySelector("#work").scrollIntoView({ behavior: "smooth" });
+        }
     }
 
     function updatePaginationButtons() {
@@ -104,18 +106,18 @@ document.addEventListener("DOMContentLoaded", function () {
     prevButton.addEventListener("click", function () {
         if (currentPage > 1) {
             currentPage--;
-            showProjects(currentPage);
+            showProjects(currentPage, true);
         }
     });
 
     nextButton.addEventListener("click", function () {
         if (currentPage < totalPages) {
             currentPage++;
-            showProjects(currentPage);
+            showProjects(currentPage, true);
         }
     });
 
-    showProjects(currentPage);
+    showProjects(currentPage, false);
 });
 
 
