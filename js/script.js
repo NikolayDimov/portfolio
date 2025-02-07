@@ -70,7 +70,19 @@ function showSection(sectionId) {
     const selectedSection = document.getElementById(sectionId);
     selectedSection.classList.remove("hidden");
     selectedSection.classList.add("visible");
+
+    const heading = document.querySelector("#work .heading-secondary");
+    if (heading) {
+        heading.textContent = sectionId === "projects" ? "Things I've made" : "Things I've learned";
+    } else {
+        console.error("Heading element not found!");
+    }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    showSection("projects");
+});
+
 
 // Pagination for projects
 document.addEventListener("DOMContentLoaded", function () {
