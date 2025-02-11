@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
         projectsToShow.forEach(project => projectsContainer.appendChild(project));
         updatePaginationButtons();
         if (shouldScroll) {
-            document.querySelector("#work").scrollIntoView({ behavior: "smooth" });
+            document.querySelector(".tab-content").scrollIntoView({ behavior: "smooth" });
         }
     }
 
