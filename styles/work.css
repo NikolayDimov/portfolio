@@ -167,8 +167,23 @@
 
 .nav-buttons {
     display: flex;
-    gap: 0.5em;
 }
+
+.page-btn {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 4px 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0 4px;
+}
+
+.page-btn.active {
+    background: #0978CE;
+    color: white;
+    border-color: #0978CE;
+}
+
 
 /* Change github project to certificates */
 .hidden {

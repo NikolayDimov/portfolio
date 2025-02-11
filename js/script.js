@@ -95,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const prevButton = document.querySelector(".prev-btn");
     const nextButton = document.querySelector(".next-btn");
+    const navButtonsContainer = document.querySelector(".nav-buttons");
 
     function showProjects(page, shouldScroll = false) {
         projectsContainer.innerHTML = "";
@@ -105,6 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         projectsToShow.forEach(project => projectsContainer.appendChild(project));
         updatePaginationButtons();
+        updatePaginationNumbers();
         if (shouldScroll) {
             document.querySelector(".tab-content").scrollIntoView({ behavior: "smooth" });
         }
@@ -113,6 +115,27 @@ document.addEventListener("DOMContentLoaded", function () {
     function updatePaginationButtons() {
         prevButton.disabled = currentPage === 1;
         nextButton.disabled = currentPage === totalPages || totalPages === 0;
+    }
+
+    function updatePaginationNumbers() {
+        // Remove existing page numbers
+        document.querySelectorAll(".page-btn").forEach(btn => btn.remove());
+
+        for (let i = 1; i <= totalPages; i++) {
+            const pageButton = document.createElement("button");
+            pageButton.textContent = i;
+            pageButton.classList.add("btn", "btn--ghost", "page-btn");
+            if (i === currentPage) {
+                pageButton.classList.add("active");
+            }
+            pageButton.addEventListener("click", function () {
+                currentPage = i;
+                showProjects(currentPage, true);
+            });
+            // Insert page numbers between Prev and Next
+            navButtonsContainer.insertBefore(pageButton, nextButton);
+        }
+
     }
 
     prevButton.addEventListener("click", function () {

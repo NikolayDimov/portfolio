@@ -215,7 +215,6 @@
     }
 
     .project-box:hover {
-        /* Move the card upward on hover */
         transform: translateY(0px);
         box-shadow: none;
     }
@@ -226,6 +225,10 @@
 
     .btn-right {
         padding-bottom: 2em;
+    }
+
+    .nav-buttons .page-btn {
+        display: none;
     }
 }
 
