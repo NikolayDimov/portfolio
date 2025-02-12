@@ -153,6 +153,10 @@
     .container_about {
         max-width: 800px;
     }
+
+    .category-title {
+        font-size: 0.8em;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -169,6 +173,17 @@
     .about__cta-box {
         margin-top: 3.5em;
     }
+
+    .about__skills-icon {
+        height: 1.5em;
+        width: 1.5em;
+    }
+
+    .tooltip .tooltiptext {
+        font-size: 0.75em;
+        width: 80px;
+        padding: 4px 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -184,6 +199,21 @@
 
     .about_container_content {
         padding-top: 0;
+    }
+
+    .category-title {
+        font-size: 0.7em;
+    }
+
+    .about__skills-icon {
+        height: 1.2em;
+        width: 1.2em;
+    }
+
+    .tooltip .tooltiptext {
+        font-size: 0.6em;
+        width: 70px;
+        padding: 3px 0;
     }
 }
 
