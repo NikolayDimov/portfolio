@@ -84,6 +84,8 @@ Here is a curated list of some major projects that showcase my skills and expert
     - https://github.com/NikolayDimov/Shared-Trips
     - [Link to Live Demo (if applicable)](#)
 
+7. **And Many Others**
+
 ## Certificates - SoftUni certificates in the Portfolio
 
 ## Skills
@@ -99,7 +101,7 @@ Explore the diverse set of skills I bring to the table. From programming languag
 ## Contact
 
 -   **Email:** dimovv.nikolay@gmail.com
--   **LinkedIn:** https://www.linkedin.com/feed/update/urn:li:activity:7289927730031206400/
+-   **LinkedIn:** https://www.linkedin.com/in/nikolay-dimov-96138b350/
 -   **Personal Website:** https://nikolaydimov.github.io/Portfolio/
 
 Feel free to fork this repository and use it as a template for your own portfolio!
