@@ -37,7 +37,7 @@ body {
     height: 100vh;
     color: #fff;
     background-color: black;
-    background-image: url("../img/pxfuel-resize.jpg");
+    background-image: url("../assets/img/pxfuel-resize.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -244,13 +244,13 @@ img {
 
 .social-icons__link .fa-facebook:hover {
     color: transparent;
-    background-image: url('../img/social_icons/Facebook_Logo_2023.png');
+    background-image: url('../assets/img/social_icons/Facebook_Logo_2023.png');
     background-size: cover;
 }
 
 .social-icons__link .fa-instagram:hover {
     color: transparent;
-    background-image: url('../img/social_icons/800px-Instagram.png');
+    background-image: url('../assets/img/social_icons/800px-Instagram.png');
     background-size: cover;
     background-position: center;
 }

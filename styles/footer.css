@@ -1,7 +1,7 @@
 .footer {
     display: block;
     background-color: black;
-    background-image: url("../img/pxfuel-resize.jpg");
+    background-image: url("../assets/img/pxfuel-resize.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
