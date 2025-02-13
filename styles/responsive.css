@@ -63,6 +63,10 @@
         padding-top: 2em;
     }
 
+    .header {
+        background-attachment: scroll;
+    }
+
 
 
     /* Social icons - remove hover */
@@ -108,8 +112,6 @@
         transform: none;
         background-color: initial;
     }
-
-
 }
 
 
