@@ -161,17 +161,13 @@
 
 @media screen and (max-width: 900px) {
     .container_about {
-        max-width: 600px;
+        max-width: 700px;
         margin: 0 auto;
         height: auto;
     }
 
     .about_container_content {
         height: 100%;
-    }
-
-    .about__cta-box {
-        margin-top: 3.5em;
     }
 
     .about__skills-icon {
@@ -184,21 +180,33 @@
         width: 80px;
         padding: 4px 0;
     }
+
+    .about__skills-icon {
+        height: 1.2em;
+        width: 1.2em;
+    }
+
+    .about__content {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .container_about {
-        max-width: 500px;
+        max-width: 600px;
         margin: 0 auto;
         height: auto;
     }
 
     .about_container_content {
         height: 100%;
+        padding-top: 0;
     }
 
-    .about_container_content {
-        padding-top: 0;
+    .about__content {
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.2;
     }
 
     .category-title {
@@ -215,16 +223,27 @@
         width: 70px;
         padding: 3px 0;
     }
+
+    .about_technology_first_line,
+    .about_technology_second_line {
+        gap: 2.5em;
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .container_about {
-        max-width: 450px;
+        max-width: 550px;
         margin: 0 auto;
         padding-left: 2em;
         padding-right: 2em;
         font-size: 1em;
         height: auto;
+    }
+
+    .about_technology_first_line,
+    .about_technology_second_line {
+        gap: 1em;
     }
 }
 
