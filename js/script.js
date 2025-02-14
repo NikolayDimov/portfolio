@@ -169,10 +169,10 @@ function sendEmail() {
 
     Email.send({
         Host: "smtp.elasticemail.com",
-        Username: window.env.APP_EMAIL_USERNAME,
-        Password: window.env.APP_EMAIL_PASSWORD,
-        To: window.env.APP_EMAIL_TO,
-        From: window.env.APP_EMAIL_FROM,
+        Username: process.env.EMAIL_USERNAME,
+        Password: process.env.EMAIL_PASSWORD,
+        To: process.env.EMAIL_TO,
+        From: process.env.EMAIL_FROM,
         Subject: subject.value,
         Body: bodyMessage,
         Port: 2525
