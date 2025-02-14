@@ -32,31 +32,6 @@ new Waypoint({
     offset: "bottom-in-view",
 });
 
-// Sidebar menu with JS
-// function ShowSidebar() {
-// 	const sidebar = document.querySelector('.nav-side-bar');
-// 	sidebar.style.display = 'flex';
-
-// }
-
-// function HideSidebar() {
-// 	const sidebar = document.querySelector('.nav-side-bar');
-// 	sidebar.style.display = 'none';
-// }
-
-// // Toggle sidebar when clicking the menu button
-// document.querySelector('.menu-btn').addEventListener('click', function (event) {
-// 	event.stopPropagation();
-// 	ShowSidebar();
-// });
-
-// // Close sidebar when clicking outside
-// document.addEventListener('click', function (event) {
-// 	const sidebar = document.querySelector('.nav-side-bar');
-// 	if (!sidebar.contains(event.target) && event.target !== document.querySelector('.menu-btn')) {
-// 		HideSidebar();
-// 	}
-// });
 
 // Work section - change projects/certificates
 function showSection(sectionId) {
@@ -164,7 +139,6 @@ const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 
 function sendEmail() {
-    console.log("Preparing to send email...");
     const bodyMessage = `Name: ${username.value}<br> Email: ${email.value}<br> Message: ${message.value}`;
 
     Email.send({
@@ -177,7 +151,6 @@ function sendEmail() {
         Body: bodyMessage,
         Port: 2525
     }).then((message) => {
-        console.log("Email result:", message);
         if (message == "OK") {
             Swal.fire({
                 title: "Success!",
