@@ -167,25 +167,54 @@ function sendEmail() {
     console.log("Preparing to send email...");
     const bodyMessage = `Name: ${username.value}<br> Email: ${email.value}<br> Message: ${message.value}`;
 
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: window.env.APP_EMAIL_USERNAME,
-        Password: window.env.APP_EMAIL_PASSWORD,
-        To: window.env.APP_EMAIL_TO,
-        From: window.env.APP_EMAIL_FROM,
-        Subject: subject.value,
-        Body: bodyMessage,
-        Port: 2525
-    }).then((message) => {
-        console.log("Email result:", message);
-        if (message == "OK") {
+    // Email.send({
+    //     Host: "smtp.elasticemail.com",
+    //     Username: window.env.APP_EMAIL_USERNAME,
+    //     Password: window.env.APP_EMAIL_PASSWORD,
+    //     To: window.env.APP_EMAIL_TO,
+    //     From: window.env.APP_EMAIL_FROM,
+    //     Subject: subject.value,
+    //     Body: bodyMessage,
+    //     Port: 2525
+    // }).then((message) => {
+    //     console.log("Email result:", message);
+    //     if (message == "OK") {
+    //         Swal.fire({
+    //             title: "Success!",
+    //             text: "Message send successfully!",
+    //             icon: "success",
+    //         });
+    //     }
+    // });
+
+    fetch("http://localhost:3000/send-email", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            subject: subject.value,
+            message: bodyMessage,
+            email: email.value,
+        }),
+    })
+        .then((response) => response.text())
+        .then((data) => {
+            console.log("Email result:", data);
             Swal.fire({
                 title: "Success!",
-                text: "Message send successfully!",
+                text: "Message sent successfully!",
                 icon: "success",
             });
-        }
-    });
+        })
+        .catch((error) => {
+            console.error("Error sending email:", error);
+            Swal.fire({
+                title: "Error",
+                text: "There was an error sending the message.",
+                icon: "error",
+            });
+        });
 }
 
 contactForm.addEventListener("submit", (e) => {
