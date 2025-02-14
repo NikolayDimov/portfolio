@@ -164,17 +164,20 @@ const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 
 function sendEmail() {
+    console.log("Preparing to send email...");
     const bodyMessage = `Name: ${username.value}<br> Email: ${email.value}<br> Message: ${message.value}`;
 
     Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "",
-        Password: "",
-        To: "",
-        From: "",
+        Username: window.env.APP_EMAIL_USERNAME,
+        Password: window.env.APP_EMAIL_PASSWORD,
+        To: window.env.APP_EMAIL_TO,
+        From: window.env.APP_EMAIL_FROM,
         Subject: subject.value,
         Body: bodyMessage,
+        Port: 2525
     }).then((message) => {
+        console.log("Email result:", message);
         if (message == "OK") {
             Swal.fire({
                 title: "Success!",
