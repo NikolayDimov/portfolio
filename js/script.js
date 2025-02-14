@@ -1,8 +1,3 @@
-const emailUsername = window.env.EMAIL_USERNAME;
-const emailPassword = window.env.EMAIL_PASSWORD;
-const emailTo = window.env.EMAIL_TO;
-const emailFrom = window.env.EMAIL_FROM;
-
 /* Count to a specific number */
 function count(els) {
     els.each(function () {
@@ -174,10 +169,10 @@ function sendEmail() {
 
     Email.send({
         Host: "smtp.elasticemail.com",
-        Username: emailUsername,
-        Password: emailPassword,
-        To: emailTo,
-        From: emailFrom,
+        Username: window.env.APP_EMAIL_USERNAME,
+        Password: window.env.APP_EMAIL_PASSWORD,
+        To: window.env.APP_EMAIL_TO,
+        From: window.env.APP_EMAIL_FROM,
         Subject: subject.value,
         Body: bodyMessage,
         Port: 2525
