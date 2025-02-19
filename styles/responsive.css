@@ -32,10 +32,9 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        background: rgba(0, 0, 0, 0.3);
-        backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
-        content: "";
+        backdrop-filter: blur(12px);
+        background: rgba(0, 0, 0, 0.3);
         border-radius: 8px;
     }
 
