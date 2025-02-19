@@ -3,9 +3,7 @@
     .header .nav-items a {
         font-size: 16px;
     }
-
 }
-
 
 @media screen and (max-width: 768px) {
     .header {
@@ -28,12 +26,14 @@
     .menu {
         position: absolute;
         top: 0;
-        margin-top: 50px;
+        margin-top: 70px;
         left: 0;
         flex-direction: column;
         width: 100%;
         justify-content: center;
         align-items: center;
+        backdrop-filter: blur(12px);
+        border-radius: 8px;
     }
 
     #menu-toggle~.menu li {
