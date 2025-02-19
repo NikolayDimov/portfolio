@@ -103,7 +103,6 @@
 }
 
 .project__img-box {
-    cursor: pointer;
     overflow: hidden;
     height: 200px;
 }
