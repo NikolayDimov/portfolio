@@ -137,6 +137,7 @@
 .project__details {
     font-size: 0.9em;
     line-height: 1.3;
+    text-align: justify;
 }
 
 .project__cta-box {
