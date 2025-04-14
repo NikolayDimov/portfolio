@@ -135,7 +135,7 @@
 
 .social-icons__link_footer .fa-facebook:hover {
     color: transparent;
-    background-image: url('../img/social_icons/Facebook_Logo_2023.png');
+    background-image: url('../assets/img/social_icons/Facebook_Logo_2023.png');
     background-size: cover;
 }
 
@@ -145,7 +145,7 @@
 
 .social-icons__link_footer .fa-instagram:hover {
     color: transparent;
-    background-image: url('../img/social_icons/800px-Instagram.png');
+    background-image: url('../assets/img/social_icons/800px-Instagram.png');
     background-size: cover;
     background-position: center;
 }
